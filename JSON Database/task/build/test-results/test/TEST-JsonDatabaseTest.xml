@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JsonDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-27T22:16:42" hostname="iMac-Admin.local" time="0.306">
+  <properties/>
+  <testcase name="start" classname="JsonDatabaseTest" time="0.306"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Client started!
+Server started!
+Sent: {"type":"exit"}
+Received: {"response":"OK"}
+All done: true
+?[1;31m
+Start test 2?[0m
+?[1;31m
+Start test 3?[0m
+Client started!
+Server started!
+Sent: {"type":"set","key":"1","value":"Hello world!"}
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"set","key":"person","value":{"name":"Elon Musk","car":{"model":"Tesla Roadster","year":"2018"},"rocket":{"name":"Falcon 9","launches":"87"}}}
+
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"get","key":["person","name"]}
+
+Received: {"value":"Elon Musk","response":"OK"}
+Client started!
+Sent: {"type":"set","key":["person","rocket","launches"],"value":"88"}
+
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"get","key":["person"]}
+
+Received: {"value":{"name":"Elon Musk","car":{"model":"Tesla Roadster","year":"2018"},"rocket":{"name":"Falcon 9","launches":"88"}},"response":"OK"}
+Client started!
+Sent: {"type":"delete","key":["person","car","year"]}
+
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"get","key":["person"]}
+
+Received: {"value":{"name":"Elon Musk","car":{"model":"Tesla Roadster"},"rocket":{"name":"Falcon 9","launches":"88"}},"response":"OK"}
+Client started!
+Sent: {"type":"exit"}
+All done: true
+Received: {"response":"OK"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

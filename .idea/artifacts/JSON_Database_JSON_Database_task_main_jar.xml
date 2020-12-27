@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JSON_Database.JSON_Database-task.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JSON_Database_JSON_Database_task_main_jar</output-path>
+    <root id="archive" name="JSON_Database.JSON_Database-task.main.jar">
+      <element id="module-output" name="JSON_Database.JSON_Database-task.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.78/a3927de9bd6f351429bcf763712c9890629d8f51/jcommander-1.78.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/9180733b7df8542621dc12e21e87557e8c99b8cb/gson-2.8.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
